@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation Form </title>
+    <link rel="stylesheet" href="pass.css">
+    <script src="pass.js"></script>
+</head>
+<body>
+  <div>Password Validation Form</div>
+    <form>
+        <label for="password">Password</label>
+        <input type="password" id="password" value="" name="password" onkeyup="validatePassword()">
+        <div id="passwordStrength"></div>
+        <button onclick="checkingvalue()">SET</button>
+      </form>
+
+
+
+      
+      <script>
+        function checkingvalue(){
+             var pass = document.getElementById("password").value;
+             alert("Password is set successfully:-" + pass)
+
+               
+        }
+      </script>
+    
+</body>
+</html>
